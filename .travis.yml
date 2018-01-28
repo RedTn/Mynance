@@ -28,7 +28,7 @@ before_script:
   - greenkeeper-lockfile-update
 
 script:
-  - npm run lint:js
+  - npm run lint
   - npm test
 
 after_script:
