@@ -1,0 +1,14 @@
+@import 'ember-paper';
+
+.left-nav{
+  background-color: #333d46;
+  height: calc(100vh - 64px);
+}
+
+.inverted-button{
+  color: white;
+}
+
+.inverted-icon{
+  color: white !important;
+}

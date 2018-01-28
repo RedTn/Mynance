@@ -1,0 +1,28 @@
+{{#paper-toolbar}}
+    {{#paper-toolbar-tools}}
+        {{#paper-button iconButton=true onClick=(action (toggle "leftNavOpen" this))}}
+            {{paper-icon "menu"}}
+        {{/paper-button}}
+        <h2>
+            {{#paper-button href=(href-to 'index')}}
+                Mynance
+            {{/paper-button}}
+        </h2>
+        <span class="flex"></span>
+    {{/paper-toolbar-tools}}
+{{/paper-toolbar}}
+{{#paper-sidenav-container class="inner-sidenav"}}
+
+  {{#paper-sidenav
+    name="leftNav"
+    lockedOpen=leftNavOpen
+    closeOnClick=true
+    onToggle=(action (mut leftNavOpen))}}
+        {{#paper-content class="left-nav"}}
+            {{#paper-button class="inverted-button" href=(href-to 'payment')}}
+                Mortgage payment calculator {{paper-icon "exposure" class="inverted-icon"}}
+            {{/paper-button}}
+        {{/paper-content}}
+  {{/paper-sidenav}}
+  {{outlet}}
+{{/paper-sidenav-container}}
