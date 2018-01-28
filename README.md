@@ -1,9 +1,11 @@
 # my-nance
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/RedTn/Mynance.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/RedTn/Mynance.svg?branch=master)](https://travis-ci.org/RedTn/Mynance)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Finance App
+
+[Demo](https://mynance.surge.sh)
 
 ## Prerequisites
 

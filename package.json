@@ -18,7 +18,8 @@
     "precommit": "lint-staged",
     "start": "ember serve",
     "ember-modules-codemod": "ember-modules-codemod",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy-surge": "rm -rf dist && ember build && cp dist/index.html dist/200.html && surge dist mynance.surge.sh"
   },
   "lint-staged": {
     "{app,tests,mirage,config}/**/!(.eslintrc).js": [

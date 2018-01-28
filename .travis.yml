@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "8"
 
-sudo: false
+sudo: required
 dist: trusty
 notifications:
   email: true
@@ -28,8 +28,9 @@ before_script:
   - greenkeeper-lockfile-update
 
 script:
-  - npm run lint:js
-  - npm test
+  - yarn run build
+  - yarn test
+  - yarn run lint
 
 after_script:
   - greenkeeper-lockfile-upload
