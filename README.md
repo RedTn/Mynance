@@ -4,7 +4,7 @@
 
 Finance App
 
-[Demo](http://localhost:4200)
+[Demo](https://mynance.surge.sh)
 
 ## Prerequisites
 
