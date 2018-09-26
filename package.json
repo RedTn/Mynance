@@ -63,7 +63,7 @@
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "flexi": "^2.0.2",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0",
     "lint-staged": "^7.1.1",
     "loader.js": "^4.2.3",
     "prettier": "^1.10.2"
