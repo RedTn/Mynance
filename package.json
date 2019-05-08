@@ -15,7 +15,6 @@
     "lint": "eslint . --max-warnings 0",
     "lint-fix": "npm run prettier && eslint . --fix --max-warnings 0",
     "prettier": "prettier --single-quote --tab-width 4 --print-width 100 --write \"{app,tests,mirage,config}/**/!(.eslintrc).js\"",
-    "precommit": "lint-staged",
     "start": "ember serve",
     "ember-modules-codemod": "ember-modules-codemod",
     "test": "ember test",
@@ -71,5 +70,10 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
