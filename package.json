@@ -15,7 +15,6 @@
     "lint": "eslint . --max-warnings 0",
     "lint-fix": "npm run prettier && eslint . --fix --max-warnings 0",
     "prettier": "prettier --single-quote --tab-width 4 --print-width 100 --write \"{app,tests,mirage,config}/**/!(.eslintrc).js\"",
-    "precommit": "lint-staged",
     "start": "ember serve",
     "ember-modules-codemod": "ember-modules-codemod",
     "test": "ember test",
@@ -48,11 +47,11 @@
     "ember-cli-sass": "^7.1.4",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
-    "ember-cli-uglify": "^2.0.0",
+    "ember-cli-uglify": "^3.0.0",
     "ember-composable-helpers": "^2.1.0",
     "ember-data": "~3.0.0-beta.1",
     "ember-export-application-global": "^2.0.0",
-    "ember-href-to": "^2.0.1",
+    "ember-href-to": "^3.1.0",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-modules-codemod": "^0.2.11",
@@ -63,7 +62,7 @@
     "ember-welcome-page": "^4.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "flexi": "^2.0.2",
-    "husky": "^0.14.3",
+    "husky": "^2.2.0",
     "lint-staged": "^8.0.4",
     "loader.js": "^4.2.3",
     "prettier": "^1.10.2"
@@ -71,5 +70,10 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
