@@ -60,7 +60,7 @@
     "ember-route-action-helper": "^2.0.6",
     "ember-source": "~3.0.0-beta.1",
     "ember-welcome-page": "^4.0.0",
-    "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-ember": "^6.9.1",
     "flexi": "^2.0.2",
     "husky": "^3.0.0",
     "lint-staged": "^8.0.4",
